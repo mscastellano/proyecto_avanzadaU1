@@ -1,41 +1,90 @@
 .container {
   text-align: center;
-  margin-top: 50px;
-  font-family: Arial, sans-serif;
+  padding: 40px;
+  font-family: 'Poppins', sans-serif;
+  background-color: #23451c;
+  border-radius: 15px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  margin: 30px auto;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  color: #f0e68c;
+}
+
+.container:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
 }
 
 h1 {
-  font-size: 2rem;
+  font-size: 2.5em;
   margin-bottom: 20px;
+  color: #f9d71c;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
 }
 
-.actions {
-  margin: 20px 0;
+label {
+  font-size: 1.2em;
+  font-weight: 600;
+  color: #f0e68c;
+  margin-right: 10px;
+}
+
+input {
+  padding: 10px;
+  border: 2px solid #f9d71c;
+  border-radius: 5px;
+  font-size: 1em;
+  color: #2e8b57;
+  background-color: #fff;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input:focus {
+  outline: none;
+  border-color: #f0e68c;
+  box-shadow: 0 0 10px rgba(249, 215, 28, 0.5);
 }
 
 button {
-  margin: 10px;
   padding: 10px 20px;
-  font-size: 1rem;
-  background-color: #007bff;
-  color: white;
+  font-size: 1.2em;
+  margin: 10px;
   border: none;
-  border-radius: 5px;
+  border-radius: 50px;
+  color: #ffffff;
+  background-color: #006400;
   cursor: pointer;
-  transition: background-color 0.3s;
+  transition: all 0.3s ease;
+  font-family: 'Poppins', sans-serif;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 button:hover {
-  background-color: #0056b3;
+  opacity: 0.9;
+  transform: scale(1.05);
+  background-color: #228b22;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
 }
 
-.game-code, .joined {
-  margin-top: 30px;
-  font-size: 1.2rem;
-  color: #333;
+.app-waiting-room {
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #3cb371;
+  color: #f0e68c;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
 
-.game-code h2 {
-  font-size: 1.5rem;
-  color: #007bff;
+.app-waiting-room h2 {
+  font-size: 1.8em;
+  color: #f9d71c;
+}
+
+.app-waiting-room p {
+  font-size: 1.2em;
+  color: #fff;
 }

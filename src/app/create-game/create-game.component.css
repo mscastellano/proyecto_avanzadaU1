@@ -1,0 +1,59 @@
+.container {
+  padding: 30px;
+  background-color: #23451c;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  color: #f0e68c;
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+  width: 800px;
+  max-width: 60%;
+  height: auto;
+  position: fixed;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.container h1 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  color: #f9d71c;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  width: 100%;
+  height: auto;
+}
+
+.container button {
+  padding: 15px 30px;
+  font-size: 1.2em;
+  border: none;
+  border-radius: 50px;
+  color: #23451c;
+  background-color: #006400;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-family: 'Poppins', sans-serif;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.container button:hover {
+  opacity: 0.9;
+  transform: scale(1.05);
+  background-color: #228b22;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.container div[ngIf="!waiting"] {
+  margin-top: 20px;
+}
+
+.container div[ngIf="waiting"] {
+  margin-top: 20px;
+  padding: 15px;
+  background-color: #23451c;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  color: #f0e68c;
+}
